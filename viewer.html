@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HCS Notes Viewer</title>
+    <script src="data.js"></script>
+    <style>
+        :root {
+            --bg-body: #f0f2f5;
+            --sidebar-bg: #ffffff;
+            --text-main: #2c3e50;
+            --text-sub: #7f8c8d;
+            --header-bg: #1c548b;
+            --viewer-bg: #525659;
+            --card-link: #f8f9fa;
+        }
+
+        [data-theme="dark"] {
+            --bg-body: #091727;
+            --sidebar-bg: #111b27;
+            --text-main: #ffffff;
+            --text-sub: #3498db;
+            --header-bg: #111b27;
+            --viewer-bg: #091727;
+            --card-link: rgba(255, 255, 255, 0.05);
+        }
+
+        body { 
+            font-family: 'Segoe UI', sans-serif; 
+            margin: 0; padding: 0; 
+            background-color: var(--bg-body); 
+            display: flex; flex-direction: column; 
+            height: 100vh; overflow: hidden; 
+            transition: 0.4s ease;
+        }
+
+        header { 
+            background-color: var(--header-bg); 
+            color: white; 
+            padding: 5px 15px; 
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2); 
+            z-index: 3000; 
+            height: 75px;
+        }
+
+        .header-left { display: flex; align-items: center; gap: 10px; }
+        .header-center { text-align: center; overflow: hidden; }
+        .header-right { display: flex; align-items: center; justify-content: flex-end; gap: 10px; }
+        .logo { height: 40px; width: auto; }
+        .menu-btn {
+            background: rgba(255,255,255,0.15);
+            border: none; color: white; padding: 8px 12px;
+            border-radius: 6px; cursor: pointer; font-size: 1.1rem;
+            display: none;
+        }
+
+        .class-title { 
+            margin: 0; font-size: 1.1rem; 
+            color: white; white-space: nowrap; 
+            overflow: hidden; text-overflow: ellipsis;
+            text-transform: uppercase;
+            border-left: 2px solid #3498db;
+            padding-left: 10px;
+        }
+
+        /* --- DARK MODE SWITCH --- */
+        .switch-container { display: flex; align-items: center; cursor: pointer; }
+        .switch-box { position: relative; width: 36px; height: 18px; background: rgba(255,255,255,0.2); border-radius: 20px; }
+        #theme-input { display: none; }
+        .switch-ball { position: absolute; width: 14px; height: 14px; background: white; border-radius: 50%; top: 2px; left: 2px; transition: 0.3s; display: flex; align-items: center; justify-content: center; font-size: 8px; color: #333; }
+        #theme-input:checked + .switch-box .switch-ball { transform: translateX(18px); }
+        .back-home { color: white; text-decoration: none; font-weight: bold; background: #34495e; padding: 6px 12px; border-radius: 6px; font-size: 0.8rem;}
+
+        /* --- LAYOUT --- */
+        .main-container { display: flex; flex: 1; overflow: hidden; position: relative; }
+
+        /* PC Sidebar (Same as before) */
+        .sidebar { 
+            width: 300px; background: var(--sidebar-bg); 
+            border-right: 1px solid rgba(0,0,0,0.1); 
+            padding: 20px; overflow-y: auto; transition: 0.3s ease;
+            z-index: 2000;
+        }
+
+        .section-header {
+            color: #3498db; border-bottom: 2px solid #3498db; 
+            margin: 15px 0 10px 0; padding-bottom: 5px; font-size: 0.9rem;
+        }
+
+        .note-link { 
+            display: block; padding: 12px; background: var(--card-link); margin-bottom: 10px; 
+            text-decoration: none; color: var(--text-main); font-weight: 600; 
+            border-radius: 10px; border-bottom: 3px solid #1c548b; transition: 0.2s;
+            cursor: pointer; font-size: 0.9rem;
+        }
+        .note-link:hover { border-bottom-color: #2ecc71; transform: translateX(5px); }
+        .note-link span { display: block; font-size: 0.7rem; color: var(--text-sub); font-weight: normal; margin-top: 3px; }
+
+        .active-link { 
+    background-color: #000000 !important; /* Pure Black Background */
+    color: #ffffff !important;            /* White Text */
+    border-bottom: 3px solid #2ecc71 !important; /* Green Border */}
+    .active-link span { 
+    color: #bdc3c7 !important; /* Sub-text thoda greyish white */}
+
+        .viewer-area { flex: 1; background-color: var(--viewer-bg); display: flex; justify-content: center; position: relative; overflow: hidden; }
+        iframe { width: 100%; max-width: 950px; height: 100%; border: none; display: none; background-color: white; box-shadow: 0 0 20px rgba(0,0,0,0.4); }
+        .placeholder { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; text-align: center; }
+
+        .overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); display: none; z-index: 1500; }
+
+        /* --- MOBILE SPECIFIC LOGIC --- */
+        @media (max-width: 768px) {
+            .menu-btn { display: block; }
+            /* Mobile par sidebar khulte hi poori screen par aayega */
+            .sidebar { 
+                position: absolute; left: 0; top: 0; 
+                width: 100%; height: 100%; 
+                box-sizing: border-box;
+            }
+            /* Jab koi chapter select ho jaye tab hi hide hoga */
+            .sidebar.selected { left: -100%; width: 280px; } 
+            .sidebar.selected.open { left: 0; }
+            
+            .overlay.active { display: block; }
+            .class-title { font-size: 0.9rem; border-left: none; padding-left: 0; }
+            header { height: 70px; padding: 0 10px; }
+            .note-link { padding: 18px; margin-bottom: 15px; font-size: 1rem; } /* Mobile par bade buttons */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-left">
+            <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+            <img src="images/logo.png" alt="Logo" class="logo">
+        </div>
+        <div class="header-center">
+            <h1 class="class-title" id="page-title">Loading...</h1>
+        </div>
+        <div class="header-right">
+            <label class="switch-container">
+                <input type="checkbox" id="theme-input">
+                <div class="switch-box"><div class="switch-ball">☀️</div></div>
+            </label>
+            <a href="index.html" class="back-home">Home</a>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
+
+        <div class="sidebar" id="sidebar">
+            <h3 id="sidebar-head" style="color: var(--text-main); margin-top: 0; text-align: center;">Select Chapter</h3>
+            <div id="links-container"></div>
+        </div>
+
+        <div class="viewer-area">
+            <div class="placeholder" id="welcome-msg">
+                <h2>Ready to read?</h2>
+                <p>Please select a chapter from the list.</p>
+            </div>
+            <iframe id="main-iframe" name="content-frame"></iframe>
+        </div>
+    </div>
+
+    <script>
+        const sidebar = document.getElementById('sidebar');
+        const overlay = document.getElementById('overlay');
+        const iframe = document.getElementById('main-iframe');
+        const welcome = document.getElementById('welcome-msg');
+        const linksContainer = document.getElementById('links-container');
+
+        function toggleSidebar() {
+            sidebar.classList.toggle('open');
+            overlay.classList.toggle('active');
+        }
+
+        // Theme logic
+        const themeInput = document.getElementById('theme-input');
+        const modeIcon = document.querySelector('.switch-ball');
+        if (localStorage.getItem('hcs_theme') === 'dark') {
+            document.body.setAttribute('data-theme', 'dark');
+            themeInput.checked = true; modeIcon.innerText = '🌙';
+        }
+        themeInput.onchange = () => {
+            if (themeInput.checked) {
+                document.body.setAttribute('data-theme', 'dark');
+                modeIcon.innerText = '🌙';
+                localStorage.setItem('hcs_theme', 'dark');
+            } else {
+                document.body.removeAttribute('data-theme');
+                modeIcon.innerText = '☀️';
+                localStorage.setItem('hcs_theme', 'light');
+            }
+        };
+
+        // Viewer logic
+        const params = new URLSearchParams(window.location.search);
+        const subjectId = params.get('id');
+
+        if (subjectId && typeof allNotesData !== 'undefined' && allNotesData[subjectId]) {
+            const data = allNotesData[subjectId];
+            document.getElementById('page-title').innerText = data.title;
+            let currentSection = "";
+
+            data.chapters.forEach(ch => {
+                if (ch.section && ch.section !== currentSection) {
+                    currentSection = ch.section;
+                    const h4 = document.createElement('h4');
+                    h4.className = 'section-header';
+                    h4.innerText = currentSection;
+                    linksContainer.appendChild(h4);
+                }
+
+                const a = document.createElement('a');
+                a.className = 'note-link';
+                a.innerHTML = ch.name + "<span>" + ch.sub + "</span>";
+                
+                a.onclick = function(e) {
+    e.preventDefault();
+    
+    // 1. Black/Green color wala part (pehle jaisa)
+    document.querySelectorAll('.note-link').forEach(l => l.classList.remove('active-link'));
+    this.classList.add('active-link');
+
+    // 2. Sirf ye naya logic: Agar link '#' hai toh message dikhao
+    if (ch.link === "#") {
+        iframe.style.display = 'none';
+        welcome.style.display = 'block';
+        welcome.innerHTML = "<h2>⚠️ Notes Coming Soon</h2><p>Ye notes abhi tak upload nahi huye hain.</p>";
+    } else {
+        // Purana logic (Jo pehle se chal raha tha)
+        iframe.style.display = 'block';
+        welcome.style.display = 'none';
+        iframe.src = ch.link.replace(/\/view.*$/, '/preview');
+    }
+
+    // 3. Mobile wala sidebar close logic (jo pehle se tha)
+    if (window.innerWidth <= 768) toggleSidebar(); 
+
+
+                    // Mobile Specific: Selection ke baad sidebar normal ho jaye aur hide ho jaye
+                    if (window.innerWidth <= 768) {
+                        sidebar.classList.add('selected'); 
+                        sidebar.classList.remove('open');
+                        overlay.classList.remove('active');
+                        document.getElementById('sidebar-head').style.textAlign = 'left';
+                    }
+                };
+                linksContainer.appendChild(a);
+            });
+        }
+    </script>
+</body>
+</html>
