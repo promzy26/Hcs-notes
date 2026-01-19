@@ -116,7 +116,23 @@
 
         /* --- MOBILE SPECIFIC LOGIC --- */
         @media (max-width: 768px) {
-            .menu-btn { display: block; }
+    /* 1. PDF ke aas-paas ka faltu space khatam karo */
+    .viewer-area {
+        padding: 0px !important; 
+    }
+
+    /* 2. PDF ki width poori screen ke barabar karo */
+    iframe {
+        width: 100% !important;
+        height: 100% !important;
+        border: none !important;
+    }
+
+    /* 3. Sidebar ko parhte waqt bilkul hata do */
+    .sidebar {
+        z-index: 9999;
+    }
+}
             /* Mobile par sidebar khulte hi poori screen par aayega */
             .sidebar { 
                 position: absolute; left: 0; top: 0; 
@@ -259,4 +275,5 @@
         }
     </script>
 </body>
+
 </html>
