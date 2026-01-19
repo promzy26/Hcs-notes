@@ -25,7 +25,7 @@ const allNotesData = {
     "sstcl9": {
         title: "Class 9 - Social Science",
         chapters: [
-            { name: "Chapter 1", sub: "The French Revolution", link: "#", section: "HISTORY" },
+            // { name: "Chapter 1", sub: "The French Revolution", link: "https://docs.google.com/document/d/e/2PACX-1vRXoP6PoHC4tWns2eCWHyvP6GlQruOwfGKeqfPrwTc7ML0eDGdcSF4Cd3gaszMDolDPwLHcLtufNY7r/pub?embedded=true", section: "HISTORY" },
             { name: "Chapter 2", sub: "Socialism in Europe & Russian Revolution", link: "#", section: "HISTORY" },
             { name: "Chapter 3", sub: "Nazism and the Rise of Hitler", link: "#", section: "HISTORY" },
             { name: "Chapter 4", sub: "Forest Society and Colonialism", link: "#", section: "HISTORY" },
@@ -506,5 +506,6 @@ const allNotesData = {
             { name: "Chapter 10", sub: "Politics of Planned Development", link: "#" }
         ]
     }
+
 
 };
