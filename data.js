@@ -25,9 +25,9 @@ const allNotesData = {
     "sstcl9": {
         title: "Class 9 - Social Science",
         chapters: [
-            // { name: "Chapter 1", sub: "The French Revolution", link: "https://docs.google.com/document/d/e/2PACX-1vRXoP6PoHC4tWns2eCWHyvP6GlQruOwfGKeqfPrwTc7ML0eDGdcSF4Cd3gaszMDolDPwLHcLtufNY7r/pub?embedded=true", section: "HISTORY" },
+            { name: "Chapter 1", sub: "The French Revolution", link: "https://docs.google.com/document/d/e/2PACX-1vRXoP6PoHC4tWns2eCWHyvP6GlQruOwfGKeqfPrwTc7ML0eDGdcSF4Cd3gaszMDolDPwLHcLtufNY7r/pub?embedded=true", section: "HISTORY" },
             { name: "Chapter 2", sub: "Socialism in Europe & Russian Revolution", link: "#", section: "HISTORY" },
-            { name: "Chapter 3", sub: "Nazism and the Rise of Hitler", link: "#", section: "HISTORY" },
+            { name: "Chapter 3", sub: "Nazism and the Rise of Hitler", link: "https://docs.google.com/document/d/e/2PACX-1vSuao7yd2tIXpGQqtAXzhL_4qvif8Ka4tKuw9dZ2rvKfrHBvsueXq2ONy1IbSTKz5GF9S2rS9XUD2bJ/pub?embedded=true", section: "HISTORY" },
             { name: "Chapter 4", sub: "Forest Society and Colonialism", link: "#", section: "HISTORY" },
             { name: "Chapter 5", sub: "Pastoralists in the Modern World", link: "#", section: "HISTORY" },
             
@@ -509,3 +509,4 @@ const allNotesData = {
 
 
 };
+
