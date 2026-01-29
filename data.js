@@ -44,10 +44,10 @@ const allNotesData = {
             { name: "Chapter 4", sub: "Working of Institutions", link: "https://docs.google.com/document/d/e/2PACX-1vQi2dp4EnoIBue3kl7t2kD95mP097mMbhT5PNI_rUHb1ZC2lAJzsW5Jtk2cJ0OqmqDIn2nilWofgFdA/pub?embedded=true", section: "CIVICS" },
             { name: "Chapter 5", sub: "Democratic Rights", link: "https://docs.google.com/document/d/e/2PACX-1vQEbD39w3tCeaEecyKD5T6JpVz8Ml9aFL0F8g_Zb1-1cdlt0sa7ZfGRuP7pEXb8kBz0s6ClzbGpGzK5/pub?embedded=true", section: "CIVICS" },
 
-            { name: "Chapter 1", sub: "The Story of Village Palampur", link: "#", section: "ECONOMICS" },
-            { name: "Chapter 2", sub: "People as Resource", link: "#", section: "ECONOMICS" },
-            { name: "Chapter 3", sub: "Poverty as a Challenge", link: "#", section: "ECONOMICS" },
-            { name: "Chapter 4", sub: "Food Security in India", link: "#", section: "ECONOMICS" }
+            { name: "Chapter 1", sub: "The Story of Village Palampur", link: "https://docs.google.com/document/d/e/2PACX-1vRHG3joU8l_CjOm7gncXnaCTlP9rlRfwQKxmdOT7glxyJ8mkd2v_VUcx1vcTueaTZntB_QQ5re_J_S_/pub?embedded=true", section: "ECONOMICS" },
+            { name: "Chapter 2", sub: "People as Resource", link: "https://docs.google.com/document/d/e/2PACX-1vQnVH-uCuJUU0uRBZrWWRRb6uaW0LG9or7ifJhDA3PlxE6_vAhrSx2CKXsKwi-2jFdls-oNTXbqivk8/pub?embedded=true", section: "ECONOMICS" },
+            { name: "Chapter 3", sub: "Poverty as a Challenge", link: "https://docs.google.com/document/d/e/2PACX-1vTixGh0yb2TYhIVqR2yrrAe52J5iNNCahTQC5iMrWQ4f_Ywx-TUFFyBkguhKFZL8k7PzBIA8KfDyeT1/pub?embedded=true", section: "ECONOMICS" },
+            { name: "Chapter 4", sub: "Food Security in India", link: "https://docs.google.com/document/d/e/2PACX-1vQmC9H7iWHmEBpvh2ksRIGMca2c-cBL3-Nn2eccNy6Mzslf1PK8jt9gNoj23YsyZjCh17wFrzDxXMPo/pub?embedded=true", section: "ECONOMICS" }
         ]
     },
 
@@ -508,6 +508,7 @@ const allNotesData = {
     }
 
 };
+
 
 
 
