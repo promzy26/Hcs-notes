@@ -38,11 +38,11 @@ const allNotesData = {
             { name: "Chapter 5", sub: "Natural Vegetation and Wildlife", link: "https://docs.google.com/document/d/e/2PACX-1vTvtkTKLABSprWhvIXlEIWOtXufL99TqsivkUPywGKaqFGmcrgDAbz5_OCig6ERzNm6zJJ2DO4bhdbG/pub?embedded=true", section: "GEOGRAPHY" },
             { name: "Chapter 6", sub: "Population", link: "https://docs.google.com/document/d/e/2PACX-1vRXTPxVQocf_U_xPR82vrDjGMiM6C2yxCxUNQRkVrlqRLSCEayTHekkQcGhWCDzWBbHfcbUio_ibxX4/pub?embedded=true", section: "GEOGRAPHY" },
 
-            { name: "Chapter 1", sub: "What is Democracy? Why Democracy?", link: "#", section: "CIVICS" },
-            { name: "Chapter 2", sub: "Constitutional Design", link: "#", section: "CIVICS" },
-            { name: "Chapter 3", sub: "Electoral Politics", link: "#", section: "CIVICS" },
-            { name: "Chapter 4", sub: "Working of Institutions", link: "#", section: "CIVICS" },
-            { name: "Chapter 5", sub: "Democratic Rights", link: "#", section: "CIVICS" },
+            { name: "Chapter 1", sub: "What is Democracy? Why Democracy?", link: "https://docs.google.com/document/d/e/2PACX-1vSOn9AZLVNDFLWpclYzuyjR9ZcJ0ZdQJR8Zn5tgi_6vRsSsMnBGPjubWdvNSZLtskJmVI-8TsjtPE8k/pub?embedded=true", section: "CIVICS" },
+            { name: "Chapter 2", sub: "Constitutional Design", link: "https://docs.google.com/document/d/e/2PACX-1vREGfzaphmRHVWkOB-iMJNtIIWgQmWkDiobcI5PdkVdX0i1fs-Fm5qrV5VjjdNFoipTbnq6pvUtUyDb/pub?embedded=true", section: "CIVICS" },
+            { name: "Chapter 3", sub: "Electoral Politics", link: "https://docs.google.com/document/d/e/2PACX-1vTcJBnUr-ANT1rbidJWsK99Pimc7Tkhz20LNZ6nvmtUBblUz-JOQ1SVNpYzxMt3evcEyfOS8OWriBrQ/pub?embedded=true", section: "CIVICS" },
+            { name: "Chapter 4", sub: "Working of Institutions", link: "https://docs.google.com/document/d/e/2PACX-1vQi2dp4EnoIBue3kl7t2kD95mP097mMbhT5PNI_rUHb1ZC2lAJzsW5Jtk2cJ0OqmqDIn2nilWofgFdA/pub?embedded=true", section: "CIVICS" },
+            { name: "Chapter 5", sub: "Democratic Rights", link: "https://docs.google.com/document/d/e/2PACX-1vQEbD39w3tCeaEecyKD5T6JpVz8Ml9aFL0F8g_Zb1-1cdlt0sa7ZfGRuP7pEXb8kBz0s6ClzbGpGzK5/pub?embedded=true", section: "CIVICS" },
 
             { name: "Chapter 1", sub: "The Story of Village Palampur", link: "#", section: "ECONOMICS" },
             { name: "Chapter 2", sub: "People as Resource", link: "#", section: "ECONOMICS" },
@@ -508,6 +508,7 @@ const allNotesData = {
     }
 
 };
+
 
 
 
