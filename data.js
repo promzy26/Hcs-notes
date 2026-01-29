@@ -35,8 +35,8 @@ const allNotesData = {
             { name: "Chapter 2", sub: "Physical Features of India", link: "https://docs.google.com/document/d/e/2PACX-1vQ_xyLxrB4XM9xx3jpUL80bEW_0BuGh0Fu05MdxPx-HvuQVuSNAxzOmNZaXvbb9q4Fu_PKtzM_gYhGP/pub?embedded=true", section: "GEOGRAPHY" },
             { name: "Chapter 3", sub: "Drainage", link: "https://docs.google.com/document/d/e/2PACX-1vT-wiIy8MfU6_AQOXuO1cizkaqT0Z0-oE-hV-8JazrKLJ0qwX3e6jRrCo-AXP9eZ01pQZy2NRfXyfdC/pub?embedded=true", section: "GEOGRAPHY" },
             { name: "Chapter 4", sub: "Climate", link: "https://docs.google.com/document/d/e/2PACX-1vQ9O1AXfhfa6E3-kTS-WXB3KhVvWQoNlfJG8LQRDF7GmZ_LFZeYYo1CYv0YEXpynHMldA_kaPT6-ZAa/pub?embedded=true", section: "GEOGRAPHY" },
-            { name: "Chapter 5", sub: "Natural Vegetation and Wildlife", link: "#", section: "GEOGRAPHY" },
-            { name: "Chapter 6", sub: "Population", link: "#", section: "GEOGRAPHY" },
+            { name: "Chapter 5", sub: "Natural Vegetation and Wildlife", link: "https://docs.google.com/document/d/e/2PACX-1vTvtkTKLABSprWhvIXlEIWOtXufL99TqsivkUPywGKaqFGmcrgDAbz5_OCig6ERzNm6zJJ2DO4bhdbG/pub?embedded=true", section: "GEOGRAPHY" },
+            { name: "Chapter 6", sub: "Population", link: "https://docs.google.com/document/d/e/2PACX-1vRXTPxVQocf_U_xPR82vrDjGMiM6C2yxCxUNQRkVrlqRLSCEayTHekkQcGhWCDzWBbHfcbUio_ibxX4/pub?embedded=true", section: "GEOGRAPHY" },
 
             { name: "Chapter 1", sub: "What is Democracy? Why Democracy?", link: "#", section: "CIVICS" },
             { name: "Chapter 2", sub: "Constitutional Design", link: "#", section: "CIVICS" },
@@ -508,5 +508,6 @@ const allNotesData = {
     }
 
 };
+
 
 
