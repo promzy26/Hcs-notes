@@ -31,10 +31,10 @@ const allNotesData = {
             { name: "Chapter 4", sub: "Forest Society and Colonialism", link: "https://docs.google.com/document/d/e/2PACX-1vQN_6FNhXIe235WcoaKKA1E9IQCaopdfrIdKliCJOaaTwsg1lgF0edKZdl3zoZn-OmwyBl1X1IjK2W1/pub?embedded=true", section: "HISTORY" },
             { name: "Chapter 5", sub: "Pastoralists in the Modern World", link: "https://docs.google.com/document/d/e/2PACX-1vQuu9rcQhQI-gsiIr2hfEWMdyq4KgxvjkFchIM4H3HU9pQn7YBwZo_9kmwh85fVmAFyFPcdqpWp7c8O/pub?embedded=true", section: "HISTORY" },
             
-            { name: "Chapter 1", sub: "India - Size and Location", link: "#", section: "GEOGRAPHY" },
-            { name: "Chapter 2", sub: "Physical Features of India", link: "#", section: "GEOGRAPHY" },
-            { name: "Chapter 3", sub: "Drainage", link: "#", section: "GEOGRAPHY" },
-            { name: "Chapter 4", sub: "Climate", link: "#", section: "GEOGRAPHY" },
+                        { name: "Chapter 1", sub: "India - Size and Location", link: "https://docs.google.com/document/d/e/2PACX-1vTrwgYlUqEu9lcFrLu6bOo1Bybo7-UQZfNaUIpjgrjWmp-yA8MthVARo7F96HfPLUegqxNgkkPnpdYZ/pub?embedded=true", section: "GEOGRAPHY" },
+            { name: "Chapter 2", sub: "Physical Features of India", link: "https://docs.google.com/document/d/e/2PACX-1vQ_xyLxrB4XM9xx3jpUL80bEW_0BuGh0Fu05MdxPx-HvuQVuSNAxzOmNZaXvbb9q4Fu_PKtzM_gYhGP/pub?embedded=true", section: "GEOGRAPHY" },
+            { name: "Chapter 3", sub: "Drainage", link: "https://docs.google.com/document/d/e/2PACX-1vT-wiIy8MfU6_AQOXuO1cizkaqT0Z0-oE-hV-8JazrKLJ0qwX3e6jRrCo-AXP9eZ01pQZy2NRfXyfdC/pub?embedded=true", section: "GEOGRAPHY" },
+            { name: "Chapter 4", sub: "Climate", link: "https://docs.google.com/document/d/e/2PACX-1vQ9O1AXfhfa6E3-kTS-WXB3KhVvWQoNlfJG8LQRDF7GmZ_LFZeYYo1CYv0YEXpynHMldA_kaPT6-ZAa/pub?embedded=true", section: "GEOGRAPHY" },
             { name: "Chapter 5", sub: "Natural Vegetation and Wildlife", link: "#", section: "GEOGRAPHY" },
             { name: "Chapter 6", sub: "Population", link: "#", section: "GEOGRAPHY" },
 
@@ -508,4 +508,5 @@ const allNotesData = {
     }
 
 };
+
 
