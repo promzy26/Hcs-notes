@@ -74,18 +74,18 @@ const allNotesData = {
     "mathcl9": {
         title: "Class 9 - Mathematics",
         chapters: [
-            { name: "Chapter 1", sub: "Number Systems", link: "#" },
-            { name: "Chapter 2", sub: "Polynomials", link: "#" },
-            { name: "Chapter 3", sub: "Coordinate Geometry", link: "#" },
-            { name: "Chapter 4", sub: "Linear Equations in Two Variables", link: "#" },
-            { name: "Chapter 5", sub: "Introduction to Euclid's Geometry", link: "#" },
-            { name: "Chapter 6", sub: "Lines and Angles", link: "#" },
-            { name: "Chapter 7", sub: "Triangles", link: "#" },
-            { name: "Chapter 8", sub: "Quadrilaterals", link: "#" },
-            { name: "Chapter 9", sub: "Circles", link: "#" },
-            { name: "Chapter 10", sub: "Heron's Formula", link: "#" },
-            { name: "Chapter 11", sub: "Surface Areas and Volumes", link: "#" },
-            { name: "Chapter 12", sub: "Statistics", link: "#" }
+            { name: "Chapter 1", sub: "Number Systems", link: "https://docs.google.com/document/d/e/2PACX-1vT9RiwfvDyLwSyRpglNa1WJelanpbdarBwBTuS3kwgWmhFbt5S8HEloyStsfIFOPz9QB5qNxswgQeby/pub?embedded=true" },
+            { name: "Chapter 2", sub: "Polynomials", link: "https://docs.google.com/document/d/e/2PACX-1vSxk3HWRExKLoo6AHp9b83odohZUu4ga-hBQRXv4jiYwua_DH94QMTwCoqrCSKVkrQcRnAUkTXZISbJ/pub?embedded=true" },
+            { name: "Chapter 3", sub: "Coordinate Geometry", link: "https://docs.google.com/document/d/e/2PACX-1vSKDqX-7LL7yxcXwBYYLRVBavJnhQWEELe2PHIqEJRARu8hMKjZ5UBFpzFMiiUIbcEZchuFkvRy_VX_/pub?embedded=true" },
+            { name: "Chapter 4", sub: "Linear Equations in Two Variables", link: "?embedded=true" },
+            { name: "Chapter 5", sub: "Introduction to Euclid's Geometry", link: "?embedded=true" },
+            { name: "Chapter 6", sub: "Lines and Angles", link: "?embedded=true" },
+            { name: "Chapter 7", sub: "Triangles", link: "?embedded=true" },
+            { name: "Chapter 8", sub: "Quadrilaterals", link: "?embedded=true" },
+            { name: "Chapter 9", sub: "Circles", link: "?embedded=true" },
+            { name: "Chapter 10", sub: "Heron's Formula", link: "?embedded=true" },
+            { name: "Chapter 11", sub: "Surface Areas and Volumes", link: "?embedded=true" },
+            { name: "Chapter 12", sub: "Statistics", link: "?embedded=true" }
         ]
     },
 
@@ -508,6 +508,7 @@ const allNotesData = {
     }
 
 };
+
 
 
 
