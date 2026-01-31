@@ -77,12 +77,12 @@ const allNotesData = {
             { name: "Chapter 1", sub: "Number Systems", link: "https://docs.google.com/document/d/e/2PACX-1vT9RiwfvDyLwSyRpglNa1WJelanpbdarBwBTuS3kwgWmhFbt5S8HEloyStsfIFOPz9QB5qNxswgQeby/pub?embedded=true" },
             { name: "Chapter 2", sub: "Polynomials", link: "https://docs.google.com/document/d/e/2PACX-1vSxk3HWRExKLoo6AHp9b83odohZUu4ga-hBQRXv4jiYwua_DH94QMTwCoqrCSKVkrQcRnAUkTXZISbJ/pub?embedded=true" },
             { name: "Chapter 3", sub: "Coordinate Geometry", link: "https://docs.google.com/document/d/e/2PACX-1vSKDqX-7LL7yxcXwBYYLRVBavJnhQWEELe2PHIqEJRARu8hMKjZ5UBFpzFMiiUIbcEZchuFkvRy_VX_/pub?embedded=true" },
-            { name: "Chapter 4", sub: "Linear Equations in Two Variables", link: "?embedded=true" },
-            { name: "Chapter 5", sub: "Introduction to Euclid's Geometry", link: "?embedded=true" },
-            { name: "Chapter 6", sub: "Lines and Angles", link: "?embedded=true" },
-            { name: "Chapter 7", sub: "Triangles", link: "?embedded=true" },
-            { name: "Chapter 8", sub: "Quadrilaterals", link: "?embedded=true" },
-            { name: "Chapter 9", sub: "Circles", link: "?embedded=true" },
+            { name: "Chapter 4", sub: "Linear Equations in Two Variables", link: "https://docs.google.com/document/d/e/2PACX-1vSztXHS7NpmlxjRl3OKQmgCDrfMDhhntOqy2_96CYVchlCyeViGUSqLA3vJpR20fI3GlB1FsBebDTFP/pub?embedded=true" },
+            { name: "Chapter 5", sub: "Introduction to Euclid's Geometry", link: "https://docs.google.com/document/d/e/2PACX-1vTxwD35ZQdGCSa3rlE4Vs7VHsmo3_ckYxoVyl02UyRp5jLCpaGJOpd9xAxr4ZMWo2DapVBocTuNJQZ_/pub?embedded=true" },
+            { name: "Chapter 6", sub: "Lines and Angles", link: "https://docs.google.com/document/d/e/2PACX-1vSrzQUFujRuDsYbcCyjU7z4GNRXzjFJT0wopYwl7XtxV6-X0jy1ePYynljPzEzKnOMcVjmcCksXntvf/pub?embedded=true" },
+            { name: "Chapter 7", sub: "Triangles", link: "https://docs.google.com/document/d/e/2PACX-1vQlcXZ01j6pk_vpz1K1_V2VRCzcFq2qpWWHxNKniaUGqgqNbalRDFNvbWS6aqjyGXQD6aYLZN72OnjA/pub?embedded=true" },
+            { name: "Chapter 8", sub: "Quadrilaterals", link: "https://docs.google.com/document/d/e/2PACX-1vRA9D-d4c7XumIhB921Cs2n5aPOinm3kRcRDItq1VEaqQkwDYV5M6_u2zjOucDzvonDTaFjmtkt72-M/pub?embedded=true" },
+            { name: "Chapter 9", sub: "Circles", link: "https://docs.google.com/document/d/e/2PACX-1vTo0e-ZOVR9B47Tp9Tlqf_0HNw8ODSXguBNSSS9sHyNNl_jiBY4kHj2CCAzIDNlVGaNJMSJQsbCZn2I/pub?embedded=true" },
             { name: "Chapter 10", sub: "Heron's Formula", link: "?embedded=true" },
             { name: "Chapter 11", sub: "Surface Areas and Volumes", link: "?embedded=true" },
             { name: "Chapter 12", sub: "Statistics", link: "?embedded=true" }
@@ -508,6 +508,7 @@ const allNotesData = {
     }
 
 };
+
 
 
 
