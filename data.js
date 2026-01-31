@@ -55,10 +55,10 @@ const allNotesData = {
     "scicl9": {
         title: "Class 9 - Science",
         chapters: [
-            { name: "Chapter 1", sub: "Matter in Our Surroundings", link: "#" },
-            { name: "Chapter 2", sub: "Is Matter Around Us Pure", link: "#" },
-            { name: "Chapter 3", sub: "Atoms and Molecules", link: "#" },
-            { name: "Chapter 4", sub: "Structure of the Atom", link: "#" },
+            { name: "Chapter 1", sub: "Matter in Our Surroundings", link: "https://docs.google.com/document/d/e/2PACX-1vTfrq_br4-ViTTJ9xcWta0gDxl4edWMOJ0kGEwbtQzMmrmKEiTeTj5sdR9TWTku4C7QN61JWf4SVkoH/pub?embedded=true", section: "Chemistry" },
+            { name: "Chapter 2", sub: "Is Matter Around Us Pure", link: "https://docs.google.com/document/d/e/2PACX-1vS4Oc-L2K3vTvyYljnms1fsXU4YE_AlMzx_9KsHjy6z6kufmRV9DQlu5Et1op2-nKc1DuNOObjZXIE1/pub?embedded=true", section: "Chemistry" },
+            { name: "Chapter 3", sub: "Atoms and Molecules", link: "https://docs.google.com/document/d/e/2PACX-1vTmEJ9JD2T_bvCYt6wccd0cJ8p7hJ6MwqkjSTQMaigKQgFQ6_O-ws-8mm4mb3jNZs3X1VTaGf2bdh-p/pub?embedded=true", section: "Chemistry" },
+            { name: "Chapter 4", sub: "Structure of the Atom", link: "https://docs.google.com/document/d/e/2PACX-1vQ14sXZKIKX4ElJ5edn39trv4ltygOKEQPj_32fMENDDDN0sBWNrtEaRlrkObbeVwg3iMc4NStXyi1t/pub?embedded=true", section: "Chemistry" },
             { name: "Chapter 5", sub: "The Fundamental Unit of Life", link: "#" },
             { name: "Chapter 6", sub: "Tissues", link: "#" },
             { name: "Chapter 7", sub: "Motion", link: "#" },
@@ -508,6 +508,7 @@ const allNotesData = {
     }
 
 };
+
 
 
 
