@@ -83,9 +83,9 @@ const allNotesData = {
             { name: "Chapter 7", sub: "Triangles", link: "https://docs.google.com/document/d/e/2PACX-1vQlcXZ01j6pk_vpz1K1_V2VRCzcFq2qpWWHxNKniaUGqgqNbalRDFNvbWS6aqjyGXQD6aYLZN72OnjA/pub?embedded=true" },
             { name: "Chapter 8", sub: "Quadrilaterals", link: "https://docs.google.com/document/d/e/2PACX-1vRA9D-d4c7XumIhB921Cs2n5aPOinm3kRcRDItq1VEaqQkwDYV5M6_u2zjOucDzvonDTaFjmtkt72-M/pub?embedded=true" },
             { name: "Chapter 9", sub: "Circles", link: "https://docs.google.com/document/d/e/2PACX-1vTo0e-ZOVR9B47Tp9Tlqf_0HNw8ODSXguBNSSS9sHyNNl_jiBY4kHj2CCAzIDNlVGaNJMSJQsbCZn2I/pub?embedded=true" },
-            { name: "Chapter 10", sub: "Heron's Formula", link: "?embedded=true" },
-            { name: "Chapter 11", sub: "Surface Areas and Volumes", link: "?embedded=true" },
-            { name: "Chapter 12", sub: "Statistics", link: "?embedded=true" }
+            { name: "Chapter 10", sub: "Heron's Formula", link: "https://docs.google.com/document/d/e/2PACX-1vTntaZvZQVja7VKCOEPCqUvpOo3RjkuH79W4TabxBpRGeZEexZck7iHAzN89lkkvt0Mq_1ulpSwW-it/pub?embedded=true" },
+            { name: "Chapter 11", sub: "Surface Areas and Volumes", link: "https://docs.google.com/document/d/e/2PACX-1vTCSB2vuqwazdwIAtLzEFk-MiL83rCIx9xMiupc71w8PS-pIzdOfdp1bVr91vMVSKwJmdM--G_wGrNF/pub?embedded=true" },
+            { name: "Chapter 12", sub: "Statistics", link: "https://docs.google.com/document/d/e/2PACX-1vSYG05A2hdJKjToeArfWVa2EKUvsKQO_wTLevGV4RYAD43GcPDuYI-W3foOFEAKT-K4cPsjvt1u0VY6/pub?embedded=true" }
         ]
     },
 
@@ -508,6 +508,7 @@ const allNotesData = {
     }
 
 };
+
 
 
 
