@@ -61,12 +61,12 @@ const allNotesData = {
             { name: "Chapter 4", sub: "Structure of the Atom", link: "https://docs.google.com/document/d/e/2PACX-1vQ14sXZKIKX4ElJ5edn39trv4ltygOKEQPj_32fMENDDDN0sBWNrtEaRlrkObbeVwg3iMc4NStXyi1t/pub?embedded=true", section: "Chemistry" },
             { name: "Chapter 5", sub: "The Fundamental Unit of Life", link: "https://docs.google.com/document/d/e/2PACX-1vSM9sbCHygC7_e2_7QnUCZDfZlRVwy1tXglO5wzW12grQts1chzpVrOgvUgvjnva3L6pj2x0mjcJgK-/pub", section: "Biology" },
             { name: "Chapter 6", sub: "Tissues", link: "https://docs.google.com/document/d/e/2PACX-1vRceXVdyMeFdRP3GCYw2sMHCm9GGCmUC287I_dM9VBQ0ou02jiQI0FmtVoui4bHWoYB3x18rJk1kD6N/pub?embedded=true", section: "Biology" },
+            { name: "Chapter 12", sub: "Improvement in Food Resources", link: "https://docs.google.com/document/d/e/2PACX-1vQunJ_rdG84kK3wft7Hx9_ZWUUDihVXfLzIIoQjyyIroOtYtvtsqr6VRTH3YdMvfR8E5fC3C7uXMWFK/pub?embedded=true", section: "Biology" },
             { name: "Chapter 7", sub: "Motion", link: "https://docs.google.com/document/d/e/2PACX-1vSzPlZRnSRaLjZcH-ZBpdNAfjr21bvAzc6_ohuhvr_jxNpLPg9K8XshXsKzxyBNgAY-67FpOfrkx7Cv/pub?embedded=true", section: "Physics" },
             { name: "Chapter 8", sub: "Force and Laws of Motion", link: "https://docs.google.com/document/d/e/2PACX-1vT_nAB1LeEBWVIWD_M3xFqdkc8egcOIjBxRBwV1PiUgOEWok8x9zte-HNCXOPztkK06LMiFzJ_SXiC0/pub?embedded=true", section: "Physics" },
             { name: "Chapter 9", sub: "Gravitation", link: "https://docs.google.com/document/d/e/2PACX-1vQhKzjSbz_L-wRITcXTa3t-_EIUaJ0DP5KFRVb5J3m8G_POUbrmK_DtbzUpGMppaNu1M1HbV93nfeDw/pub?embedded=true", section: "Physics" },
             { name: "Chapter 10", sub: "Work and Energy", link: "https://docs.google.com/document/d/e/2PACX-1vSk8Wsb4andZNyare2-PIf69h19B7ESPBHP3vZg65nDL8I2P2tsZlFtoolcJVB6eLW4w98KGoymDoyz/pub?embedded=true", section: "Physics" },
-            { name: "Chapter 11", sub: "Sound", link: "https://docs.google.com/document/d/e/2PACX-1vTb7ZV_a6hgBotuFk0Msa_6bLLRpFrwV9uh6ItbJ6dsMmIgfwodvnEOSDRH1KCrJ__rpj-sBcEimZyN/pub?embedded=true", section: "Physics" },
-            { name: "Chapter 12", sub: "Improvement in Food Resources", link: "https://docs.google.com/document/d/e/2PACX-1vQunJ_rdG84kK3wft7Hx9_ZWUUDihVXfLzIIoQjyyIroOtYtvtsqr6VRTH3YdMvfR8E5fC3C7uXMWFK/pub?embedded=true", section: "Biology" }
+            { name: "Chapter 11", sub: "Sound", link: "https://docs.google.com/document/d/e/2PACX-1vTb7ZV_a6hgBotuFk0Msa_6bLLRpFrwV9uh6ItbJ6dsMmIgfwodvnEOSDRH1KCrJ__rpj-sBcEimZyN/pub?embedded=true", section: "Physics" }
         ]
     },
 
@@ -508,6 +508,7 @@ const allNotesData = {
     }
 
 };
+
 
 
 
